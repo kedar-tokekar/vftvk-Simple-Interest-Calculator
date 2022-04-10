@@ -8,26 +8,39 @@
     <body>
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
-
-            Amount <input type="number"  id="principal">  <br/>
-            Rate <input type="range" onchange = "updateRate()"  id="rate" min="1" max="20" step=".25" value="10.25">
-            <span id="rate_val">10.25</span><br/>
-            No. of Years 
-            <select id="years">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select><br/>
-            Interest : <span id="result"></span><br>
-
-            <button onclick="compute()">Compute Interest</button>
+            <table>
+                <tr>
+                    <td>Amount</td>
+                    <td><input type="number"  id="principal"></td>
+                </tr>
+                <tr>
+                    <td>Interest Rate</td>
+                    <td>
+                        <input type="range" onchange = "updateRate()"  id="rate" min="1" max="20" step=".25" value="10.25">
+                        <span id="rate_val">10.25</span><br/>
+                    </td>
+                <tr>
+                    <td>No. of Years </td>
+                    <td>
+                        <select id="years">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button onclick="compute()">Compute Interest</button></td>
+                    <td></td>
+                </tr>
+            </table>
             <span id="result">
 
             </span>
